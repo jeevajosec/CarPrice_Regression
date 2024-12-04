@@ -35,38 +35,47 @@ Performed feature scaling using StandardScaler to ensure all features are on the
 Five regression algorithms were implemented and evaluated:
 
 Linear Regression
+
 Decision Tree Regressor
+
 Random Forest Regressor
+
 Gradient Boosting Regressor
+
 Support Vector Regressor (SVR)
 
 5. Model Evaluation
 The models were evaluated based on the following metrics:
 
 MAE (Mean Absolute Error)
+
 MSE (Mean Squared Error)
+
 RMSE (Root Mean Squared Error)
+
 R² (R-squared)
+
 The performance metrics for all models were compared, and the best-performing model was selected.
 
 6. Hyperparameter Tuning
 The best-performing model, Random Forest Regressor, was tuned using GridSearchCV to find the optimal hyperparameters, improving model accuracy.
 
 7. Final Model Performance
-The final model, Logistic Regression, achieved the following performance metrics on the test set:
+The final model, XGBoosting, achieved the following performance metrics on the test set:
 
-MAE: 0.1509
-MSE: 0.0344
-RMSE: 0.1854
-R²: 0.8871
-The R² score of 0.8871 indicates that the model explains approximately 88.71% of the variance in the car prices, which is a good result.
+Final Model Performance:
+MAE: 0.1425
+MSE: 0.0366
+RMSE: 0.1912
+R2: 0.8799
+The R² score of 0.8799 indicates that the model explains approximately 87.99% of the variance in the car prices, which is a good result.
 
 8. Model Saving and Testing
 The final model was saved using joblib for future predictions.
 The model was tested on unseen data, and the results were consistent with the training performance.
 
 Conclusion
-The final model, Logistic Regression, is highly effective at predicting car prices based on the input features. The results from the evaluation indicate that the model performs well in generalizing to new data, with an R² value of 0.8871. This model can be used by the automobile company to better understand the pricing dynamics of the American car market and make informed decisions regarding car pricing.
+The final model, XGBoosting, is highly effective at predicting car prices based on the input features. The results from the evaluation indicate that the model performs well in generalizing to new data, with an R² value of 0.8799. This model can be used by the automobile company to better understand the pricing dynamics of the American car market and make informed decisions regarding car pricing.
 
 Files Included
 CarPrice.ipynb: Jupyter notebook containing the full implementation of data preprocessing, model building, evaluation, and hyperparameter tuning.
